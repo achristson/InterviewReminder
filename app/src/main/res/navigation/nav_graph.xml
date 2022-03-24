@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/interviewFragment">
+
+    <fragment
+        android:id="@+id/interviewFragment"
+        android:name="com.achristson.interviewreminder.fragments.InterviewFragment"
+        android:label="InterviewFragment"
+        tools:layout="@layout/fragment_interviews">
+        <action
+            android:id="@+id/action_interviewFragment_to_addInterviewFragment"
+            app:destination="@id/addInterviewFragment" />
+        <action
+            android:id="@+id/action_interviewFragment_to_interviewDetailsFragment"
+            app:destination="@id/interviewDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addInterviewFragment"
+        android:name="com.achristson.interviewreminder.fragments.AddInterviewFragment"
+        android:label="AddInterviewFragment"
+        tools:layout="@layout/fragment_add_interview"
+        >
+        <action
+            android:id="@+id/action_addInterviewFragment_to_interviewFragment"
+            app:destination="@id/interviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/interviewDetailsFragment"
+        android:name="com.achristson.interviewreminder.fragments.InterviewDetailsFragment"
+        android:label="InterviewDetailsFragment"
+        tools:layout="@layout/fragment_interview_details">
+        <argument
+            android:name="interviewId"
+            app:argType="long" />
+    </fragment>
+</navigation>

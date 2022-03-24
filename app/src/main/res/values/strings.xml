@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Interview Reminder</string>
+    <string name="add_interview_title">Add an Interview</string>
+    <string name="company_name_hint">Company</string>
+    <string name="date_picker_text">Choose a date</string>
+    <string name="company_name_label">Company:</string>
+    <string name="date_label">Date:</string>
+    <string name="time_label">Time:</string>
+    <string name="time_picker_text">Choose a time</string>
+    <string name="notes_label">Notes:</string>
+    <string name="notes_hint">Things you may want to remember</string>
+    <string name="save_interview_button_text">Save Interview</string>
+    <string name="invalid_date_selected">Make sure the selected date and (or) time is in the future</string>
+    <string name="invalid_company_selected">Please enter a company</string>
+    <string name="interview_saved_message">Interview Saved!</string>
+    <string name="error_saving_interview_message">Error saving interview. Please try again later.</string>
+    <string name="interview_notification_channel_id">interview_channel</string>
+    <string name="interview_notification_channel_name">Interview</string>
+    <string name="no_data">no data</string>
+    <string name="interview_notification_title">It\'s Time!</string>
+    <string name="interview_notification_text">You have an interview coming up</string>
+    <string name="interview_channel_description">Interview Tomorrow!</string>
+</resources>
